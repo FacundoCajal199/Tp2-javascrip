@@ -4,7 +4,6 @@ let numFilas = parseInt(prompt("Ingrese el número de filas"));
 let numColumnas = parseInt(prompt("Ingrese el número de columnas"));
 
 let numCeldas = numFilas * numColumnas;
-let numActual = numCeldas;
 
 document.write("<table>");
 
@@ -12,11 +11,11 @@ for (let i = 1; i <= numFilas; i++) {
   document.write("<tr>");
 
   for (let j = 1; j <= numColumnas; j++) {
-    document.write("<td>" + numActual + "</td>");
-    numActual--;
+    document.write("<td>" + numCeldas + "</td>");
+    numCeldas--;
   }
 
-  document.write("</tr>");
+  document.write("</tr>"); 
 }
 
 document.write("</table>");
